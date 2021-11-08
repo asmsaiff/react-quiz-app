@@ -60,3 +60,12 @@ h4 {
     grid-template-columns: 1fr;
   }
 }
+
+/* signup component */
+.signup {
+  height: 500px;
+}
+
+.login {
+  height: 330px;
+}

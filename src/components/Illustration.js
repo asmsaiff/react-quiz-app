@@ -1,14 +1,13 @@
 import classes from "../styles/Illustration.module.css";
-import SignUpImage from "../assets/images/signup.svg";
 
-const Illustration = () => {
-    return (
+const Illustration = ({ illustration }) => {
+	return (
 		<>
 			<div className={classes.illustration}>
-				<img src={SignUpImage} alt='Signup' />
+				<img src={illustration} alt='Signup' />
 			</div>
 		</>
 	);
-}
+};
 
 export default Illustration;

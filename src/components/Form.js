@@ -1,13 +1,11 @@
 import classes from "../styles/Form.module.css";
 
-const Form = ({children}) => {
+export default function Form({cssClass, children}) {
 	return (
 		<>
-			<form className={`${classes.signup} ${classes.form}`} action='#!'>
+			<form className={`${cssClass} ${classes.form}`} action='#!'>
 				{children}
 			</form>
 		</>
 	);
 };
-
-export default Form;
