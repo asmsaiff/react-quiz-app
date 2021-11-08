@@ -9,9 +9,10 @@ import SignUpInfo from "./SignUpInfo";
 export default function Login() {
 	return (
 		<>
+			<h1>Login to your account</h1>
 			<div className={classes.column}>
 				<Illustration illustration={loginImage} />
-				<Form cssClass="login">
+				<Form cssClass='login'>
 					<TextInput
 						type='text'
 						placeholder='Enter email'
