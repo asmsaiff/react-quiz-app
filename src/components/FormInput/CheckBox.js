@@ -4,7 +4,7 @@ export default function CheckBox({ type, label }) {
     return (
 		<label>
 			<input type={type} />
-            <span className={classes.label}>{label}</span>
+			<span className={`${classes.label}`}>{label}</span>
 		</label>
 	);
 }
