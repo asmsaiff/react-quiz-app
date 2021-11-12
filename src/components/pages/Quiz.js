@@ -9,7 +9,7 @@ export default function Quiz() {
 			<h4>Question can have multiple answers</h4>
 
 			<Answers />
-			<ProgressBar />
+			<ProgressBar nextBtnClass="button"/>
 			<MiniPlayer />
 		</>
 	);

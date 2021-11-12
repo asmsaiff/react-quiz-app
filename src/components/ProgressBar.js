@@ -1,6 +1,6 @@
 import classes from "../styles/ProgressBar.module.css";
 
-export default function ProgressBar() {
+export default function ProgressBar({nextBtnClass}) {
 	return (
 		<div className={classes.progressBar}>
 			<div className={classes.backButton}>
@@ -13,7 +13,7 @@ export default function ProgressBar() {
 				</div>
 			</div>
 			<a href='result.html'>
-				<button className={`${classes.button} ${classes.next}`}>
+				<button className={`${nextBtnClass} ${classes.next}`}>
 					<span>Next Question</span>
 					<span className='material-icons-outlined'> arrow_forward </span>
 				</button>
