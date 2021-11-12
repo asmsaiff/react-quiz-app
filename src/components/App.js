@@ -1,13 +1,15 @@
 import '../styles/App.css'
 import Layout from "./Layout";
-import Quiz from './pages/Quiz';
+import Result from './pages/Result';
+// import Quiz from './pages/Quiz';
 // import Videos from './Videos';
 
 function App() {
     return (
         <Layout>
             {/* <Videos /> */}
-            <Quiz />
+            {/* <Quiz /> */}
+            <Result />
         </Layout>
     );
 }
