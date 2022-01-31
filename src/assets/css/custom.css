@@ -1,0 +1,11 @@
+:root {
+    --inter: 'Inter', sans-serif;
+    --paris: 'Parisienne', cursive;;
+}
+
+.inter {
+    font-family: var(--inter);
+}
+.paris {
+    font-family: var(--paris);
+}
