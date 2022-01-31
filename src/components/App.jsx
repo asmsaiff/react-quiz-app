@@ -7,7 +7,7 @@ export class App extends Component {
     render() {
         return (
 			<>
-				<section className='min-h-screen text-lime-50 bg-slate-900'>
+				<section className='min-h-screen text-lime-50 bg-slate-900 flex items-center'>
 					<div className='md:w-10/12 mx-auto'>
 						<Header />
 					</div>
