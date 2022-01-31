@@ -1,11 +1,29 @@
 :root {
+    --color-primary: #FA5252;
+    --color-secondary: #EEEEEE;
     --inter: 'Inter', sans-serif;
-    --paris: 'Parisienne', cursive;;
+    --paris: 'Parisienne', cursive;
 }
-
+body {
+    font-family: var(--inter);
+}
 .inter {
     font-family: var(--inter);
 }
 .paris {
     font-family: var(--paris);
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+.text-secondary {
+    color: var(--color-secondary);
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+}
+.bg-secondary {
+    background-color: var(--color-secondary);
 }
