@@ -1,6 +1,7 @@
 :root {
     --color-primary: #FA5252;
     --color-secondary: #EEEEEE;
+    --third-color: #334155;
     --inter: 'Inter', sans-serif;
     --paris: 'Parisienne', cursive;
 }
@@ -26,6 +27,9 @@ body {
 }
 .bg-secondary {
     background-color: var(--color-secondary);
+}
+.bg-third {
+    background-color: var(--third-color);
 }
 .border-bottom {
     border-bottom: 1px solid transparent;
