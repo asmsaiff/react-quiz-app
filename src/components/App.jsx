@@ -37,9 +37,9 @@ export class App extends Component {
 
 	handleAnswerBtnClick = (isCorrect) => {
 		if (isCorrect === true) {
-			this.setState({ score: this.state.score + 1 });
+			this.setState({ score: this.state.score + 2 });
 		}
-
+		
 		const nextQuestion = this.state.currentQuestion + 1;
 
 		if (nextQuestion < questions.length) {
@@ -47,7 +47,7 @@ export class App extends Component {
 				currentQuestion: nextQuestion,
 			});
 		} else {
-			alert("You have earned" + this.state.score);
+			alert("You have earned - " + this.state.score + 'points');
 		}
 	};
 
