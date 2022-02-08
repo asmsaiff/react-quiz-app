@@ -139,7 +139,7 @@ export class App extends Component {
 											}}
 											className='flex bg-third items-center text-left gap-4 py-3 px-2 sm:px-6 text-sm md:text-xl ans'
 										>
-											<BiLogInCircle className='text-primary' />
+											<BiLogInCircle className='question-icon text-primary' />
 											<span>{ansOptions.option}</span>
 										</button>
 									);
