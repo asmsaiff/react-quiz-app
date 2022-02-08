@@ -5,6 +5,13 @@
     --inter: 'Inter', sans-serif;
     --paris: 'Parisienne', cursive;
 }
+* {
+    transition: .5s;
+}
+::selection {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
 body {
     font-family: var(--inter);
 }
@@ -36,4 +43,8 @@ body {
 }
 .border-bottom:hover {
     border-bottom: 1px solid var(--color-primary);
+}
+
+.ans:hover {
+    background-color: var(--color-primary);
 }
