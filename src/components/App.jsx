@@ -14,7 +14,7 @@ export class App extends Component {
 		passMarks: "8",
 		currentQuestion: 0,
 		score: 0,
-		showScore: true,
+		showScore: false,
 		totalQuestion: questions.length,
 		nextButton: "",
 	};
@@ -47,7 +47,7 @@ export class App extends Component {
 				currentQuestion: nextQuestion,
 			});
 		} else {
-			alert("You have earned - " + this.state.score + 'points');
+			this.setState({ showScore : true });
 		}
 	};
 
@@ -64,7 +64,7 @@ export class App extends Component {
 		return (
 			<>
 				<section className='min-h-screen text-lime-50 bg-slate-900 flex items-center py-12 px-4'>
-					{this.state.nextQuestion < questions.length ? (
+					{!this.state.showScore ? (
 						<div className='md:w-10/12 mx-auto'>
 							{/* Header */}
 							<h1 className='inter font-extrabold text-primary text-3xl lg:text-5xl text-center'>
@@ -154,11 +154,22 @@ export class App extends Component {
 							</div>
 						</div>
 					) : (
-						<div className='md:w-10/12 mx-auto'>
+						<div className='md:w-10/12 mx-auto text-center space-y-6'>
 							{/* Header */}
-							<h1 className='inter font-extrabold text-primary text-3xl lg:text-5xl text-center'>
-								{this.state.score}
+							<h1 className='inter font-extrabold text-primary text-3xl lg:text-5xl'>
+								Thanks for your participation!
 							</h1>
+							<h3 className='text-secondary'>
+								Your score is :
+								<span className='text-primary text-4xl md:text-5xl mx-2'>
+									{this.state.score}
+								</span>
+								Out of
+								<span className='text-primary text-4xl md:text-5xl mx-2'>
+									{this.state.totalQuestion}
+								</span>
+								questions.
+							</h3>
 						</div>
 					)}
 				</section>
