@@ -7,7 +7,7 @@ React firebase quiz application where you can watch videos and take exams and fi
 ## To start of this project on your local computer, follow this few steps -
 
 - Clone this repository by ```git clone https://github.com/saifullahsiddique/react-quiz-app.git```
-- ```cd css-box-shadow-generator-by-react```
+- ```cd react-quiz-app```
 - ```yarn add / npm install```
 - ```yarn/npm start```
 - Enjoyyyyy!!
