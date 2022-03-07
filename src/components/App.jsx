@@ -37,7 +37,7 @@ export class App extends Component {
 
 	handleAnswerBtnClick = (isCorrect) => {
 		if (isCorrect === true) {
-			this.setState({ score: this.state.score + 2 });
+			this.setState({ score: this.state.score + 1 });
 		}
 		
 		const nextQuestion = this.state.currentQuestion + 1;
@@ -160,7 +160,7 @@ export class App extends Component {
 								Thanks for your participation!
 							</h1>
 							<h3 className='text-secondary'>
-								Your score is :
+								Your correct answer is :
 								<span className='text-primary text-4xl md:text-5xl mx-2'>
 									{this.state.score}
 								</span>
