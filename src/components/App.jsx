@@ -9,9 +9,9 @@ import { questions } from "../data/Questions";
 export class App extends Component {
 	state = {
 		examName: "WordPress Basic",
-		examTime: "10 Minutes",
-		fullMarks: "10",
-		passMarks: "8",
+		examTime: "20 Minutes",
+		fullMarks: "20",
+		passMarks: "16",
 		currentQuestion: 0,
 		score: 0,
 		showScore: false,
